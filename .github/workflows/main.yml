@@ -11,14 +11,22 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Run react npm build script
-        run: npm install && npm build
-        env: CI:false
-
-      - name: FTP-Deploy-Action
-        uses: SamKrikland/FTP-Deploy-Action@3.1.1
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          ftp-server: ftp.primeitclub.com
-          ftp-user: ictv8-ftp-cicd@ictv8.primeitclub.com
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: build/
+          node-version: "16" # or whatever version you're using
+
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+        env:
+          CI: false
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ftp.primeitclub.com
+          username: ictv8-ftp-cicd@ictv8.primeitclub.com
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./build/
