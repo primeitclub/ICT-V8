@@ -43,10 +43,10 @@ export default function ComingSoon(): JSX.Element {
           alt="Blur Background"
         />
         <div className="flex flex-col h-screen z-20 justify-center items-center">
-          <div className="text-white text-5xl md:text-7xl 2xl:text-8xl font-bold font-afacad uppercase text-center mt-24">
+          <div className="text-white text-5xl md:text-[82px] 2xl:text-8xl font-bold font-afacad uppercase text-center mt-24">
             coming soon
           </div>
-          <div className="text-[#e8dddd] text-xs md:text-[16px] font-medium font-afacad text-center">
+          <div className="text-[#e8dddd] text-xs md:text-[18px] font-medium font-afacad text-center">
             Mark your calendar—ICT Meetup v8.0 is coming.
           </div>
         </div>
