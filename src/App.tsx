@@ -1,9 +1,12 @@
-import { Button } from "@/components/ui/button";
+// import React from "react";
+import { Routes, Route } from "react-router-dom";
+import "./index.css";
+import ComingSoon from "./pages/ComingSoon";
+
 export default function App() {
   return (
-    <>
-      hello world
-      <Button>Click me</Button>
-    </>
+    <Routes>
+      <Route path="/" element={<ComingSoon />} />
+    </Routes>
   );
 }
