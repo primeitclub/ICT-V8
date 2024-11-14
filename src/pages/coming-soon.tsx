@@ -79,7 +79,7 @@ export default function ComingSoon(): JSX.Element {
             alt="Background Text"
           />
         </div>
-        <div className="absolute h-1/4  flex-col-reverse md:flex-row flex gap-24 w-full px-12 justify-between items-center z-20 bottom-8">
+        <div className="absolute md:h-auto h-1/4 flex-col-reverse md:flex-row flex gap-24 w-full px-12 justify-between items-center md:items-end z-20 bottom-8">
           <div>
             <div className="text-[#e8e8e8] text-lg md:text-md font-normal font-afacad">
               Stay Connected, Stay Updated!
