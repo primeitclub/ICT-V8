@@ -29,15 +29,15 @@ export default function ComingSoon(): JSX.Element {
   return (
     <BackgroundBeamsWithCollision>
       <div
-        className="flex flex-col items-center  min-h-screen w-full text-black overflow-hidden bg-cover bg-center bg-no-repeat"
+        className="flex flex-col items-center min-h-[100dvh] w-full text-black overflow-hidden bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${window.innerWidth >= 768 ? bg : mobile})`,
         }}
       >
         {" "}
-        <div className="w-full flex justify-between mt-0 md:absolute overflow-hidden z-40">
-          <img src={ict} className=" m-8 h-10 object-contain" alt="ICT logo" />
-          <div className="h-10 w-20 m-8">
+        <div className="z-40 flex justify-between w-full mt-0 overflow-hidden md:absolute">
+          <img src={ict} className="object-contain h-10 m-8 " alt="ICT logo" />
+          <div className="w-20 h-10 m-8">
             {" "}
             <a
               href="https://primeitclub.com"
@@ -46,25 +46,25 @@ export default function ComingSoon(): JSX.Element {
             >
               <img
                 src={pitc}
-                className="w-full h-full object-contain"
+                className="object-contain w-full h-full"
                 alt="PITC logo"
               />
             </a>
           </div>{" "}
         </div>
-        <div className="absolute h-full flex items-center md:items-stretch md:p-6 z-10 object-contain -mt-16 md:mt-0">
+        <div className="absolute z-10 flex items-center object-contain h-full -mt-16 md:items-stretch md:p-6 md:mt-0">
           <img src={mascot} alt="Mascot" />
         </div>
         <img
           src={blurbg}
-          className="absolute hidden md:flex h-full items-center justify-center z-10 p-24 mt-12 object-cover"
+          className="absolute z-10 items-center justify-center hidden object-cover h-full p-24 mt-12 md:flex"
           alt="Blur Background"
         />
-        <div className="absolute md:hidden h-full z-10 -mt-12 flex items-center justify-center object-cover opacity-100">
+        <div className="absolute z-10 flex items-center justify-center object-cover h-full -mt-12 opacity-100 md:hidden">
           {" "}
           <img src={mblur} alt="Blur Background" />
         </div>
-        <div className="absolute flex flex-col h-screen z-20 justify-center items-center gap-0">
+        <div className="absolute z-20 flex flex-col items-center justify-center h-screen gap-0">
           <div className="text-white text-[56px] leading-25 md:text-[82px] 2xl:text-9xl font-bold font-afacad uppercase text-center -mt-16 md:mt-24">
             coming soon
           </div>
@@ -72,19 +72,19 @@ export default function ComingSoon(): JSX.Element {
             Mark your calendar—ICT Meetup v8.0 is coming.
           </div>
         </div>
-        <div className="absolute hidden md:flex bottom-2 w-full">
+        <div className="absolute hidden w-full md:flex bottom-2">
           <img
             src={bgText}
-            className="w-full object-cover"
+            className="object-cover w-full"
             alt="Background Text"
           />
         </div>
-        <div className="absolute md:h-auto h-1/4 flex-col-reverse md:flex-row flex gap-24 w-full px-12 justify-between items-center md:items-end z-20 bottom-8">
+        <div className="absolute z-20 flex flex-col-reverse items-center justify-between w-full gap-24 px-12 md:h-auto h-1/4 md:flex-row md:items-end bottom-8">
           <div>
             <div className="text-[#e8e8e8] text-lg md:text-md font-normal font-afacad">
               Stay Connected, Stay Updated!
             </div>
-            <div className="flex gap-4 mt-2 justify-center">
+            <div className="flex justify-center gap-4 mt-2">
               {socialIcons.map((icon, index) => (
                 <a
                   key={index}
@@ -113,7 +113,7 @@ export default function ComingSoon(): JSX.Element {
         <div className="absolute inset-x-0 bottom-0">
           <img
             src={gradient}
-            className="w-full object-cover"
+            className="object-cover w-full"
             alt="Gradient Background"
           />
         </div>
