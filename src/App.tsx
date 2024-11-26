@@ -6,7 +6,7 @@ import ComingSoon from "./pages/coming-soon";
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<ComingSoon />} />
+      <Route path="/coming-soon" element={<ComingSoon />} />
     </Routes>
   );
 }
