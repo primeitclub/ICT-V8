@@ -1,5 +1,5 @@
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
-import ict from "@/assets/Coming-Soon/ict.png";
+import ict from "@/assets/ict.svg";
 import pitc from "@/assets/Coming-Soon/pitc.png";
 import bgText from "@/assets/Coming-Soon/bg-text.png";
 import gradient from "@/assets/Coming-Soon/gradient-bg.png";
