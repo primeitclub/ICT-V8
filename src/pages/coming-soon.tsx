@@ -29,7 +29,7 @@ export default function ComingSoon(): JSX.Element {
   return (
     <BackgroundBeamsWithCollision>
       <div
-        className="flex flex-col items-center min-h-[100dvh] w-full text-black overflow-hidden bg-cover bg-center bg-no-repeat"
+        className="flex flex-col items-center w-full h-screen overflow-hidden text-black bg-center bg-no-repeat bg-cover"
         style={{
           backgroundImage: `url(${window.innerWidth >= 768 ? bg : mobile})`,
         }}
