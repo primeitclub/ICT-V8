@@ -3,7 +3,7 @@ import v7poster from "@/assets/v7poster.png";
 
 export default function PosterSection() {
   return (
-    <div className="relative max-w-screen min-h-screen bg-gradient-to-r from-[#0086a7] overflow-x-hidden to-[#001783]">
+    <div className="relative min-h-screen overflow-x-hidden  bg-gradient-to-r from-[#0086a7] to-[#001783]">
       <div
         className="absolute inset-0"
         style={{
