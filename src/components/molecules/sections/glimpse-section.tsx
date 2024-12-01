@@ -56,10 +56,10 @@ export default function GlimpseSection() {
       />
 
       <div className="relative mt-24 z-10">
-        <div className="text-white text-[64px] text-center font-bold font-afacad capitalize">
+        <div className="text-white text-2xl md:text-[64px] text-center font-bold font-afacad capitalize">
           Glimpse of the past
         </div>
-        <div className="text-center text-[#e2dbdb] text-2xl font-normal font-afacad capitalize">
+        <div className="text-center text-[#e2dbdb] text-lg md:text-2xl font-normal font-afacad capitalize">
           A Look Back at Our Legacy
         </div>
         <div className="relative flex h-full flex-col items-center justify-center mt-12 gap-4 overflow-hidden">
@@ -70,7 +70,7 @@ export default function GlimpseSection() {
                   key={idx}
                   src={data.img}
                   alt={data.name}
-                  className="mx-auto h-[280px] cursor-pointer rounded-md"
+                  className="mx-auto h-[240px] md:h-[280px] cursor-pointer rounded-md"
                 />
               ))}
             </Marquee>
@@ -85,7 +85,7 @@ export default function GlimpseSection() {
                   key={idx}
                   src={data.img}
                   alt={data.name}
-                  className="mx-auto h-[280px] cursor-pointer rounded-md"
+                  className="mx-auto h-[240px] md:h-[280px] cursor-pointer rounded-md"
                 />
               ))}
             </Marquee>
