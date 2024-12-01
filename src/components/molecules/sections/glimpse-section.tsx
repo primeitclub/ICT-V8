@@ -59,7 +59,7 @@ export default function GlimpseSection() {
         <div className="text-white text-2xl md:text-[64px] text-center font-bold font-afacad capitalize">
           Glimpse of the past
         </div>
-        <div className="text-center text-[#e2dbdb] text-lg md:text-2xl font-normal font-afacad capitalize">
+        <div className="text-center text-[#e2dbdb] text-lg md:text-2xl mt-0 md:mt-4 font-normal font-afacad capitalize">
           A Look Back at Our Legacy
         </div>
         <div className="relative flex h-full flex-col items-center justify-center mt-12 gap-4 overflow-hidden">
