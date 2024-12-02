@@ -6,6 +6,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ], theme: {
   	extend: {
+		fontFamily: {
+			afacad: ['Afacad', 'sans-serif'], // Add a fallback font like sans-serif
+		  },
+		  
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

@@ -1,8 +1,12 @@
-import { Button } from "@/components/ui/button"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landing from "./pages/landing-page";
 
 export default function App() {
-  return (<>
-    hello world
-    <Button>Click me</Button>
-  </>)
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
