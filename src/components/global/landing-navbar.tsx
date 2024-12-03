@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import { Menu } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -28,25 +26,12 @@ const navItems: NavItem[] = [
 ];
 
 export function Navbar() {
-  const [isScrolled, setIsScrolled] = React.useState(false);
-
-  React.useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   const isLg = useMedia({ minWidth: config.theme.screens.lg });
 
   return (
     <header
       className={cn(
-        "fixed top-0 z-50 w-full text-white transition-colors ",
-        isScrolled
-          ? "bg-black/30 backdrop-blur supports-[backdrop-filter]:bg-black/30"
-          : "bg-black/30"
+        "fixed top-0 z-50 w-full text-white transition-colors bg-black/30 backdrop-blur supports-[backdrop-filter]:bg-black/30"
       )}
     >
       <div className="container px-[1.5rem] flex items-center justify-between h-16 mx-auto">
