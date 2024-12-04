@@ -56,18 +56,18 @@ const faqItems: FAQItem[] = [
 ];
 const FAQSection: React.FC = () => {
   return (
-    <div className="relative min-h-screen p-8 text-white bg-black font-afacad">
+    <div className="relative 3xl:max-w-[2400px] mx-auto overflow-hidden text-white bg-black font-afacad">
       <img
         src={robot}
         alt="ICT Meetup Robot Mascot"
         className="absolute w-[400px] h-auto hidden lg:block"
       />
       <div className="blur-3xl">
-        <div className="absolute -z-1 top-60 w-[400px] h-[800px]  lg:w-[1200px] lg:h-[800px] bg-gradient-to-r from-[#0086A7] via-cyan-500 to-[#002783] rounded-full blur-3xl opacity-40"></div>
-        <div className="absolute -z-10 top-40 right-0 w-[400px] h-[800px] lg:w-[1200px] lg:h-[800px] bg-gradient-to-r from-[#002783] via-[#001783] to-[#001783] rounded-full blur-3xl opacity-60"></div>
+        <div className="absolute -z-1 top-[150px] w-[400px] h-[800px]  lg:w-[1200px] lg:h-[800px] bg-gradient-to-r from-[#0086A7] via-cyan-500 to-[#002783] rounded-full blur-3xl opacity-40"></div>
+        <div className="absolute -z-10 top-[120px] right-0 w-[400px] h-[800px] lg:w-[1200px] lg:h-[800px] bg-gradient-to-r from-[#002783] via-[#001783] to-[#001783] rounded-full blur-3xl opacity-60"></div>
       </div>
-      <div className="flex justify-center mt-20">
-        <div className="w-[1200px] ">
+      <div className="container flex justify-center mt-20">
+        <div className="w-[1200px] z-10">
           <h1 className="mb-4 text-5xl font-semibold text-center">
             Your ICT Meetup Guide
           </h1>
@@ -97,7 +97,7 @@ const FAQSection: React.FC = () => {
           </Accordion>
         </div>
       </div>
-      <div className="pb-8 mt-24 text-center">
+      <div className="container z-10 mt-24 text-center">
         <h2 className="mb-4 text-2xl font-semibold ">STILL HAVE A QUESTION?</h2>
         <p className="text-gray-300">
           Contact us at{" "}

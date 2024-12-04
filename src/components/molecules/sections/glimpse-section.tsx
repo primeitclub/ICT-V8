@@ -43,7 +43,7 @@ export default function GlimpseSection() {
   const firstHalf = photos.slice(0, halfLength);
   const secondHalf = photos.slice(halfLength);
   return (
-    <div className="relative max-w-screen min-h-screen bg-gradient-to-r from-[#0086a7] to-[#001783] overflow-x-hidden">
+    <div className="relative min-h-screen overflow-x-hidden bg-black max-w-screen">
       <div
         className="absolute inset-0"
         style={{
@@ -55,14 +55,14 @@ export default function GlimpseSection() {
         }}
       />
 
-      <div className="relative mt-24 z-10">
+      <div className="relative z-10 mt-24">
         <div className="text-white text-2xl md:text-[64px] text-center font-bold font-afacad capitalize">
           Glimpse of the past
         </div>
         <div className="text-center text-[#e2dbdb] text-lg md:text-2xl mt-0 md:mt-4 font-normal font-afacad capitalize">
           A Look Back at Our Legacy
         </div>
-        <div className="relative flex h-full flex-col items-center justify-center mt-12 gap-4 overflow-hidden">
+        <div className="relative flex flex-col items-center justify-center h-full gap-4 mt-12 overflow-hidden">
           <div className="flex flex-row gap-4 ">
             <Marquee className=" justify-center overflow-hidden [--duration:12s] [--gap:2rem]">
               {firstHalf.map((data, idx) => (

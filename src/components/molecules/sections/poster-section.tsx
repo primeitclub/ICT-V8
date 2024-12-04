@@ -3,7 +3,7 @@ import v7poster from "@/assets/v7poster.png";
 
 export default function PosterSection() {
   return (
-    <div className="relative min-h-screen overflow-x-hidden  bg-gradient-to-r from-[#0086a7] to-[#001783]">
+    <div className="relative  min-h-screen overflow-x-hidden  bg-gradient-to-r from-[#0086a7] to-[#001783]">
       <div
         className="absolute inset-0"
         style={{
@@ -15,7 +15,7 @@ export default function PosterSection() {
         }}
       />
 
-      <div className="relative flex flex-col items-center justify-center min-h-screen mt-12">
+      <div className="container relative flex flex-col items-center justify-center min-h-screen mt-12">
         <div className="relative z-10">
           <img src={cute_robo} className="h-40 md:h-80" alt="Cute Robot" />
         </div>

@@ -15,6 +15,9 @@ const config: Config = {
           "2xl": "1536px",
         },
       },
+      screens: {
+        "3xl": "1920px",
+      },
       fontFamily: {
         afacad: ["Afacad", "sans-serif"],
       },

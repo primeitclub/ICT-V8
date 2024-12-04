@@ -1,14 +1,14 @@
 import { Navbar } from "@/components/global/landing-navbar";
 import GlimpseSection from "@/components/molecules/sections/glimpse-section";
 import PosterSection from "@/components/molecules/sections/poster-section";
-import FAQSection from "../components/molecules/sections/Faq";
+import FAQSection from "../components/molecules/sections/faq-section";
 import Hero from "@/components/heroPage/hero";
 
 export default function LandingPage(): JSX.Element {
   return (
     <>
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
       <PosterSection />
       <GlimpseSection />
       <FAQSection />

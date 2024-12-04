@@ -47,7 +47,7 @@ export function Navbar() {
             <Link
               key={item.href}
               to={item.href}
-              className="transition-colors text-muted-foreground hover:text-primary"
+              className="text-white transition-colors hover:text-primary"
             >
               {item.title}
             </Link>
