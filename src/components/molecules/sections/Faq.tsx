@@ -56,35 +56,35 @@ const faqItems: FAQItem[] = [
 ];
 const FAQSection: React.FC = () => {
   return (
-    <div className="relative min-h-screen bg-black text-white p-8 font-afacad">
+    <div className="relative min-h-screen p-8 text-white bg-black font-afacad">
       <img
         src={robot}
         alt="ICT Meetup Robot Mascot"
         className="absolute w-[400px] h-auto hidden lg:block"
       />
       <div className="blur-3xl">
-        <div className="absolute z-0 top-60 w-[400px] h-[800px]  lg:w-[1200px] lg:h-[800px] bg-gradient-to-r from-[#0086A7] via-cyan-500 to-[#002783] rounded-full blur-3xl opacity-40"></div>
-        <div className="absolute z-[-1] top-40 right-0 w-[400px] h-[800px] lg:w-[1200px] lg:h-[800px] bg-gradient-to-r from-[#002783] via-[#001783] to-[#001783] rounded-full blur-3xl opacity-60"></div>
+        <div className="absolute -z-1 top-60 w-[400px] h-[800px]  lg:w-[1200px] lg:h-[800px] bg-gradient-to-r from-[#0086A7] via-cyan-500 to-[#002783] rounded-full blur-3xl opacity-40"></div>
+        <div className="absolute -z-10 top-40 right-0 w-[400px] h-[800px] lg:w-[1200px] lg:h-[800px] bg-gradient-to-r from-[#002783] via-[#001783] to-[#001783] rounded-full blur-3xl opacity-60"></div>
       </div>
       <div className="flex justify-center mt-20">
         <div className="w-[1200px] ">
-          <h1 className="text-5xl font-semibold mb-4 text-center">
+          <h1 className="mb-4 text-5xl font-semibold text-center">
             Your ICT Meetup Guide
           </h1>
-          <p className="text-gray-300 mb-8 text-center">
+          <p className="mb-8 text-center text-gray-300">
             We're Here To Help With Any Questions You Have
           </p>
 
           <Accordion
             type="single"
             collapsible
-            className="backdrop-blur-lg bg-white bg-opacity-5 rounded-20"
+            className="bg-white backdrop-blur-lg bg-opacity-5 rounded-20"
           >
             {faqItems.map((item, index) => (
               <AccordionItem
                 key={`item-${index + 1}`}
                 value={`item-${index + 1}`}
-                className="border-none hover:backdrop-blur-lg hover:bg-white hover:bg-opacity-5 p-2 px-4 transition duration-300 ease-in-out"
+                className="p-2 px-4 transition duration-300 ease-in-out border-none hover:backdrop-blur-lg hover:bg-white hover:bg-opacity-5"
               >
                 <AccordionTrigger className="text-white text-[20px] ">
                   {item.question}
@@ -97,8 +97,8 @@ const FAQSection: React.FC = () => {
           </Accordion>
         </div>
       </div>
-      <div className="text-center mt-24 pb-8">
-        <h2 className="text-2xl font-semibold mb-4 ">STILL HAVE A QUESTION?</h2>
+      <div className="pb-8 mt-24 text-center">
+        <h2 className="mb-4 text-2xl font-semibold ">STILL HAVE A QUESTION?</h2>
         <p className="text-gray-300">
           Contact us at{" "}
           <a
