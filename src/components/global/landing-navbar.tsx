@@ -47,14 +47,16 @@ export function Navbar() {
             <Link
               key={item.href}
               to={item.href}
-              className="transition-colors text-muted-foreground hover:text-primary"
+              className="text-white transition-colors hover:text-primary"
             >
               {item.title}
             </Link>
           ))}
         </nav>
         <div className="items-center justify-end hidden lg:flex">
-          <Button>Get Started</Button>
+          <Button className="text-[#e8e8e8]  text-lg md:text-sm font-normal font-afacad px-4 py-2 bg-gray-200/20 hover:bg-gradient-to-r hover:from-[#4864e5]/50 hover:to-[#7408bb]/50 border-[#5a93ed]/50 hover:border-[1px] transition-all duration-600 hover:scale-105 ease-in-out rounded-[4px]">
+            Register Now
+          </Button>
         </div>
         {!isLg && (
           <Sheet>

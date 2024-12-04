@@ -10,13 +10,20 @@ const config: Config = {
     extend: {
       container: {
         center: true,
-        padding: "1rem",
+        padding: "1.5rem",
         screens: {
           "2xl": "1536px",
         },
       },
+      screens: {
+        "3xl": "1920px",
+      },
+      boxShadow: {
+        "text-custom": "0px 4px 20.5px #585353", // Custom text shadow
+      },
       fontFamily: {
         afacad: ["Afacad", "sans-serif"],
+        hanken_grotesk: ["Hanken Grotesk", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

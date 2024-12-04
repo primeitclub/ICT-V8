@@ -15,8 +15,8 @@ import tt from "@/assets/Coming-Soon/tiktok.png";
 import mobile from "@/assets/Coming-Soon/mobile-bg.png";
 import mblur from "@/assets/Coming-Soon/mobile-blur.png";
 
-const socialIcons = [fb, tw, ig, ln, yt, tt];
-const socialLinks = [
+export const socialIcons = [fb, tw, ig, ln, yt, tt];
+export const socialLinks = [
   "https://www.facebook.com/primeitclub",
   "https://x.com/_primeitclub",
   "https://instagram.com/primeitclub",
