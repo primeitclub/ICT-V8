@@ -7,8 +7,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        'text-custom': '0px 4px 20.5px #585353', // Custom text shadow
+      },
       fontFamily: {
         afacad: ["Afacad", "sans-serif"],
+        hanken_grotesk: ["Hanken Grotesk", "sans-serif"]
       },
       borderRadius: {
         lg: "var(--radius)",
