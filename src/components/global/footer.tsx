@@ -7,10 +7,11 @@ export default function Footer() {
       return (
             <div className="relative bg-black overflow-hidden">
                   <div className="blur-3xl">
-                        <div className="absolute z-0 top-60 w-[400px] h-[800px] 2xl:w-[1200px] lg:w-[1000px] lg:h-[800px] bg-gradient-to-r from-[#0086A7] via-cyan-500 to-[#002783] rounded-full blur-3xl opacity-40"></div>
-                        <div className="absolute z-[-1] top-40 right-0 w-[400px] 2xl:w-[1200px] h-[800px] lg:w-[1000px] lg:h-[800px] bg-gradient-to-r from-[#002783] via-[#001783] to-[#001783] rounded-full blur-3xl opacity-60"></div>
                   </div>
-                  <div className="container mx-auto p-4 md:p-8">
+                  <div className="absolute z-[0] top-[24rem] left-0 w-[400px] 2xl:w-[1200px] h-[800px] lg:w-[1000px] lg:h-[800px] bg-gradient-to-l from-[#002783] via-[#001783] to-[#001783] rounded-full blur-3xl opacity-60"></div>
+                  <div className="absolute right-0 z-0 top-[16rem] w-[400px] h-[800px] 2xl:w-[1200px] lg:w-[1000px] lg:h-[800px] bg-gradient-to-r from-[#0086A7] via-cyan-500 to-[#002783] rounded-full blur-3xl opacity-40">
+                  </div>
+                  <div className="container mx-auto p-4 md:p-8 relative text-white">
                         {/* Header Section */}
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 text-center sm:text-left font-afacad">
                               {/* Organizer */}
@@ -48,7 +49,7 @@ export default function Footer() {
                               {/* Links */}
                               <div className="space-y-4">
                                     <h3 className="font-semibold text-lg">Links</h3>
-                                    <ul className="space-y-2 text-md #BCB9B9">
+                                    <ul className="space-y-2 text-md text-[#BCB9B9]">
                                           <li><Link to="#" className="hover:text-cyan-400">About Us</Link></li>
                                           <li><Link to="#" className="hover:text-cyan-400">Events</Link></li>
                                           <li><Link to="#" className="hover:text-cyan-400">ICT Cup</Link></li>
@@ -61,7 +62,7 @@ export default function Footer() {
                               <div className="space-y-4">
                                     <div>
                                           <h3 className="font-semibold text-lg mb-2">Contact Person</h3>
-                                          <ul className="space-y-1 text-md #BCB9B9">
+                                          <ul className="space-y-1 text-md text-[#BCB9B9]">
                                                 <li>Sandesh Basnet(9843744896)</li>
                                                 <li>Niva Maharajan(9843744896)</li>
                                                 <li>Aditika Singh(9843744896)</li>
@@ -72,7 +73,7 @@ export default function Footer() {
                               <div className="space-y-4">
                                     <div>
                                           <h3 className="font-semibold text-lg mb-2">Location</h3>
-                                          <ul className="space-y-1 text-md #BCB9B9">
+                                          <ul className="space-y-1 text-md text-[#BCB9B9]">
                                                 <li>Prime College</li>
                                                 <li>Khusibu, Nayabazar</li>
                                           </ul>
@@ -80,8 +81,8 @@ export default function Footer() {
                               </div>
                         </div>
 
-                        <div className="relative flex items-center justify-between py-12">
-                              <div className="text-white lg:text-[12rem] font-bold leading-none font-afacad sm:text-[8rem] text-[4rem] shadow-text ">                                    ICT MEETUP
+                        <div className="relative flex items-center justify-between">
+                              <div className="text-white lg:text-[12.8rem] font-bold leading-none font-afacad sm:text-[8rem] text-[4rem] shadow-text ">                                    ICT MEETUP
                               </div>
                               <div className="md:block">
                                     <img src={peaceMascot} className="object-contain" width={500}
@@ -89,9 +90,9 @@ export default function Footer() {
                               </div>
                         </div>
 
-                        <div className="lg:mt-6 lg:pt-7 border-t-2 border-gray-400 pt-2 mt-3 font-hanken_grotesk">
+                        <div className=" lg:pt-4 border-t-2 border-gray-400 pt-2 mt-3 font-hanken_grotesk">
                               <div className="lg:flex lg:justify-between lg:items-center text-center">
-                                    <p className="text-sm #BDB3B3">© 2024 Prime IT Club. All rights reserved</p>
+                                    <p className="text-sm text-[#BCB9B9]">© 2024 Prime IT Club. All rights reserved</p>
                                     <div className="flex space-x-4 justify-center mt-2 md:mt-0">
                                           {socialIcons.map((icon, index) => (
                                                 <a
