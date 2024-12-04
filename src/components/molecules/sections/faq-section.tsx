@@ -56,7 +56,7 @@ const faqItems: FAQItem[] = [
 ];
 const FAQSection: React.FC = () => {
   return (
-    <div className="relative 3xl:max-w-[2400px] mx-auto overflow-hidden text-white bg-black font-afacad">
+    <div className="relative py-20 3xl:max-w-[2400px] mx-auto h-auto overflow-x-hidden text-white bg-black font-afacad">
       <img
         src={robot}
         alt="ICT Meetup Robot Mascot"
