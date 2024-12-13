@@ -39,7 +39,10 @@ const Hero: React.FC = () => {
         "Fueling Ideas, Shaping the Future – Where Open Innovation Takes the
         Lead!"
       </p>
-      <button className="px-6 py-3 h-12 w-44 text-lg mt-1 text-white rounded-tl-none rounded-tr-2xl rounded-bl-2xl rounded-br-none border-2 shadow-lg font-afacad flex items-center justify-center " style={{ backgroundColor: '#7409BC', borderColor: '#5A97E7' }}>
+      <button
+        className="px-6 py-3 h-12 w-44 text-lg mt-1 text-white rounded-tl-none rounded-tr-2xl rounded-bl-2xl rounded-br-none border-2 shadow-lg font-afacad flex items-center justify-center "
+        style={{ backgroundColor: "#7409BC", borderColor: "#5A97E7" }}
+      >
         Register Now
       </button>
 

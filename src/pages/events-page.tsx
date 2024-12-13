@@ -1,0 +1,146 @@
+import { useState } from "react";
+import { Navbar } from "@/components/global/landing-navbar";
+import EventCard from "@/components/reusable/event-card";
+import workshop from "@/assets/events/workshop.png";
+
+interface TabItem {
+  image: string;
+  name: string;
+  speaker: string;
+  location: string;
+  time: string;
+  date: string;
+}
+
+const eventsData: Record<string, TabItem[]> = {
+  workshop: [
+    {
+      image: workshop,
+      name: "Basic of Blockchain: How it works",
+      speaker: "Bibek Bhatta",
+      location: "Seminar Hall, 3rd floor",
+      time: "10:00 AM",
+      date: "February 21, 2025",
+    },
+    {
+      image: workshop,
+      name: "Freelancing: A beginner's guide",
+      speaker: "Bibek Bhatta",
+      location: "Seminar Hall, 3rd floor",
+      time: "10:00 AM",
+      date: "February 21, 2025",
+    },
+    {
+      image: workshop,
+      name: "Freelancing: A beginner's guide",
+      speaker: "Bibek Bhatta",
+      location: "Seminar Hall, 3rd floor",
+      time: "10:00 AM",
+      date: "February 21, 2025",
+    },
+  ],
+  session: [
+    {
+      image: workshop,
+      name: "Freelancing: A beginner's guide",
+      speaker: "Bibek Bhatta",
+      location: "Seminar Hall, 3rd floor",
+      time: "10:00 AM",
+      date: "February 21, 2025",
+    },
+  ],
+  competition: [
+    {
+      image: workshop,
+      name: "Graphic Design Competition",
+      speaker: "Bibek Bhatta",
+      location: "Seminar Hall, 3rd floor",
+      time: "10:00 AM",
+      date: "February 21, 2025",
+    },
+  ],
+  panel: [
+    {
+      image: workshop,
+      name: "Friend or Foe: Decoding AI's Dual nature",
+      speaker: "Bibek Bhatta",
+      location: "Seminar Hall, 3rd floor",
+      time: "10:00 AM",
+      date: "February 21, 2025",
+    },
+  ],
+  esport: [
+    {
+      image: workshop,
+      name: "Valorant",
+      speaker: "John Smith",
+      location: "Room B",
+      time: "11:00 AM",
+      date: "2024-12-21",
+    },
+  ],
+};
+
+export default function EventsPage(): JSX.Element {
+  const [activeTab, setActiveTab] =
+    useState<keyof typeof eventsData>("workshop");
+
+  return (
+    <>
+      {" "}
+      <Navbar />
+      <div className="relative min-h-screen bg-gradient-to-r from-[#00a79f] to-[#001783] pb-12">
+        <div
+          className="absolute inset-0 "
+          style={{
+            background: `radial-gradient(circle, rgba(0, 0, 0, 0.3) 25%, black 100%)`,
+          }}
+        />
+        <div className="container relative z-10 flex flex-col items-center justify-center min-h-screen mt-12">
+          <div className="mt-16 text-center text-white text-[56px] font-semibold font-afacad capitalize leading-[86px]">
+            Events
+          </div>
+          <div className="text-center text-[#e2dbdb] text-xl font-normal font-afacad capitalize">
+            Check out each event, learn more, and join the experience!
+          </div>
+
+          <div className="flex justify-center mt-8 gap-8 ">
+            {["workshop", "session", "competition", "panel", "esport"].map(
+              (tab, index, array) => (
+                <div className="flex items-center gap-8" key={tab}>
+                  <button
+                    onClick={() => setActiveTab(tab as keyof typeof eventsData)}
+                    className={`text-center text-lg font-normal font-afacad leading-10 ${
+                      activeTab === tab
+                        ? "text-white border-b-2 border-[#F15B2D]"
+                        : "text-[#bdbdbd]/60 hover:text-white"
+                    }`}
+                  >
+                    {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                  </button>
+                  {index < array.length - 1 && (
+                    <div className="h-5 w-px bg-[#617292]" />
+                  )}
+                </div>
+              )
+            )}
+          </div>
+
+          <div className="mt-8 px-4 w-full md:w-[900px] pt-8 bg-white/5 backdrop-blur-lg rounded-2xl">
+            {eventsData[activeTab].map((event, index) => (
+              <EventCard
+                key={index}
+                image={event.image}
+                name={event.name}
+                speaker={event.speaker}
+                location={event.location}
+                time={event.time}
+                date={event.date}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
