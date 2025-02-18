@@ -10,11 +10,11 @@ export default function LandingPage(): JSX.Element {
   return (
     <>
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
       <PosterSection />
       <GlimpseSection />
       <FAQSection />
-      {/* <ScheduleTable /> */}
+      <ScheduleTable />
       <Footer />
     </>
   );
