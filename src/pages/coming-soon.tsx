@@ -1,19 +1,19 @@
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import ict from "@/assets/ict.svg";
-import pitc from "@/assets/Coming-Soon/pitc.png";
-import bgText from "@/assets/Coming-Soon/bg-text.png";
-import gradient from "@/assets/Coming-Soon/gradient-bg.png";
-import mascot from "@/assets/Coming-Soon/mascot.png";
-import blurbg from "@/assets/Coming-Soon/blurbg.png";
-import bg from "@/assets/Coming-Soon/bg.png";
-import fb from "@/assets/Coming-Soon/fb.png";
-import tw from "@/assets/Coming-Soon/twitter.png";
-import ig from "@/assets/Coming-Soon/ig.png";
-import ln from "@/assets/Coming-Soon/ln.png";
-import yt from "@/assets/Coming-Soon/yt.png";
-import tt from "@/assets/Coming-Soon/tiktok.png";
-import mobile from "@/assets/Coming-Soon/mobile-bg.png";
-import mblur from "@/assets/Coming-Soon/mobile-blur.png";
+import pitc from "@/assets/coming-soon/pitc.png";
+import bgText from "@/assets/coming-soon/bg-text.png";
+import gradient from "@/assets/coming-soon/gradient-bg.png";
+import mascot from "@/assets/coming-soon/mascot.png";
+import blurbg from "@/assets/coming-soon/blurbg.png";
+import bg from "@/assets/coming-soon/bg.png";
+import fb from "@/assets/coming-soon/fb.png";
+import tw from "@/assets/coming-soon/twitter.png";
+import ig from "@/assets/coming-soon/ig.png";
+import ln from "@/assets/coming-soon/ln.png";
+import yt from "@/assets/coming-soon/yt.png";
+import tt from "@/assets/coming-soon/tiktok.png";
+import mobile from "@/assets/coming-soon/mobile-bg.png";
+import mblur from "@/assets/coming-soon/mobile-blur.png";
 
 export const socialIcons = [fb, tw, ig, ln, yt, tt];
 export const socialLinks = [
