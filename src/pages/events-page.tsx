@@ -107,8 +107,9 @@ export default function EventsPage(): JSX.Element {
       {" "}
       <Navbar />
       <div className="relative min-h-screen bg-black  pb-12">
-        <div className="absolute inset-0 flex justify-center items-center">
-          <div className="w-full h-full rounded-[25%] bg-gradient-to-bl  to-[#00a79f] from-[#001783] opacity-60 blur-3xl z-10"></div>
+        <div className="absolute inset-0 flex justify-center items-center ">
+          <div className="w-full h-full rounded-full bg-gradient-to-bl  to-[#00a79f] from-[#001783] opacity-40 blur-3xl mt-36 z-10"></div>
+          <div className="absolute right-0 top-12 w-[400px]  lg:w-[1200px] lg:h-[800px] bg-gradient-to-r from-[#00a79f] via-[#001783] to-[#001783] rounded-full blur-3xl opacity-40 blur-[240px] z-10"></div>
         </div>
         <div className="container relative mt-16 z-10 flex flex-col items-center  min-h-screen ">
           <div className="text-center mt-2 text-white text-[56px] font-semibold font-afacad capitalize leading-[86px]">

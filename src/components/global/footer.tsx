@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import pitc from "@/assets/Coming-Soon/pitc.png";
+import pitc from "@/assets/coming-soon/pitc.png";
 import peaceMascot from "@/assets/peace_mascot.png";
 import primeCollege from "@/assets/prime_college.png";
 import { socialIcons, socialLinks } from "@/pages/coming-soon";

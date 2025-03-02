@@ -1,95 +1,73 @@
-import ict1 from "@/assets/ict-v7/1.png";
-import ict2 from "@/assets/ict-v7/2.png";
-import ict3 from "@/assets/ict-v7/3.png";
-import ict4 from "@/assets/ict-v7/4.png";
-import ict5 from "@/assets/ict-v7/5.png";
-import Marquee from "@/components/ui/marquee";
-
-interface Photo {
-  name: string;
-  img: string;
-}
-
-const photos: Photo[] = [
-  {
-    name: "ICT v7 images",
-    img: ict1,
-  },
-  {
-    name: "ICT v7 images",
-    img: ict2,
-  },
-  {
-    name: "ICT v7 images",
-    img: ict3,
-  },
-  {
-    name: "ICT v7 images",
-    img: ict4,
-  },
-  {
-    name: "ICT v7 images",
-    img: ict5,
-  },
-  {
-    name: "ICT v7 images",
-    img: ict1,
-  },
-];
+import Timeline from "@/components/ui/timeline";
+import sponsors from "@/assets/sponsors/sponsor.png";
+import title from "@/assets/sponsors/title.png";
 
 export default function SponsorSection() {
-  const halfLength = Math.ceil(photos.length / 2);
+  const data = [
+    {
+      title: "Title Sponsor",
+      content: (
+        <div>
+          <div className="">
+            <img src={title} alt="sponsor logo" />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Platinum Sponsor",
+      content: (
+        <div>
+          <div className="grid grid-cols-2 gap-4">
+            <img src={sponsors} alt="sponsor logo" />
+            <img src={sponsors} alt="sponsor logo" />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Gold Sponsor",
+      content: (
+        <div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <img src={title} alt="sponsor logo" />
+            <img src={sponsors} alt="sponsor logo" />
+            <img src={sponsors} alt="sponsor logo" />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Silver Sponsor",
+      content: (
+        <div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <img src={sponsors} alt="sponsor logo" />
+            <img src={sponsors} alt="sponsor logo" />
+            <img src={sponsors} alt="sponsor logo" />
+            <img src={sponsors} alt="sponsor logo" />
+          </div>
+        </div>
+      ),
+    },
+  ];
 
-  const firstHalf = photos.slice(0, halfLength);
-  const secondHalf = photos.slice(halfLength);
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-black max-w-screen">
-      <div
-        className="absolute inset-0"
-        style={{
-          background: `linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0) 0%,
-        black 30%
-      )`,
-        }}
-      />
-
+    <div className="relative min-h-screen overflow-x-hidden bg-black max-w-screen ">
+      <div className="absolute top-10 left-0 w-[1000px] h-[1000px] bg-[#0086a7] rounded-full blur-3xl opacity-50 z-10 "></div>
+      <div className="absolute bottom-10 right-0 w-[1000px] h-[1000px] bg-[#001783] rounded-full blur-3xl opacity-50 z-10 "></div>
       <div className="relative z-10 mt-24">
-        <div className="text-white text-2xl md:text-[64px] text-center font-bold font-afacad capitalize">
-          Sponsor of the past
+        <div className="text-center">
+          <span className="text-white text-5xl font-bold font-afacard uppercase leading-[64px]">
+            OUR SPONSORS
+          </span>
+          <span className="text-[#e75f27] text-5xl font-bold font-afacard uppercase leading-[64px]">
+            .
+          </span>
         </div>
-        <div className="text-center text-[#e2dbdb] text-lg md:text-2xl mt-0 md:mt-4 font-normal font-afacad capitalize">
-          A Look Back at Our Legacy
-        </div>
-        <div className="relative flex flex-col items-center justify-center h-full gap-4 mt-12 overflow-hidden">
-          <div className="flex flex-row gap-4 ">
-            <Marquee className=" justify-center overflow-hidden [--duration:12s] [--gap:2rem]">
-              {firstHalf.map((data, idx) => (
-                <img
-                  key={idx}
-                  src={data.img}
-                  alt={data.name}
-                  className="mx-auto h-[240px] md:h-[280px] cursor-pointer rounded-md"
-                />
-              ))}
-            </Marquee>
-          </div>
-          <div className="flex flex-row gap-4">
-            <Marquee
-              className=" justify-center overflow-hidden [--duration:12s] [--gap:2rem]"
-              style={{ transform: "scaleX(-1)" }}
-            >
-              {secondHalf.map((data, idx) => (
-                <img
-                  key={idx}
-                  src={data.img}
-                  alt={data.name}
-                  className="mx-auto h-[240px] md:h-[280px] cursor-pointer rounded-md"
-                />
-              ))}
-            </Marquee>
-          </div>
+
+        <div className="relative flex flex-col items-center justify-center h-full gap-4 overflow-hidden my-4 md:px-24">
+          <Timeline data={data} />
         </div>
       </div>
     </div>
