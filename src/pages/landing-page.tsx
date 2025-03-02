@@ -13,8 +13,8 @@ export default function LandingPage(): JSX.Element {
       <Hero />
       <PosterSection />
       <GlimpseSection />
-      <FAQSection />
       <ScheduleTable />
+      <FAQSection />
       <Footer />
     </>
   );
