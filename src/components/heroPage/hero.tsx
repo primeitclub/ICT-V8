@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Hero: React.FC = () => {
   const calculateTimeLeft = () => {
-    const eventDate = new Date("2024-12-04T00:00:00");
+    const eventDate = new Date("2025-12-04T00:00:00");
     const now = new Date();
     const difference = eventDate.getTime() - now.getTime();
 
@@ -33,8 +33,14 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-900 to-gray-900 flex flex-col items-center justify-center text-white">
-      <h1 className="font-bold text-9xl font-afacad mb-2 ">ICT MEETUP V8.0</h1>
+    <div className="relative min-h-screen bg-[#0e0e1b] flex flex-col items-center justify-center text-white">
+      {/* Background Image */}
+      <img
+        src="/image.png"
+        alt="Background"
+        className="absolute top-[-70px] right-0 w-auto h-auto opacity-50"
+      />
+      <h1 className="font-bold text-9xl font-afacad mb-2 z-10 ">ICT MEETUP V8.0</h1>
       <p className=" text-xl mb-2 font-afacad">
         "Fueling Ideas, Shaping the Future – Where Open Innovation Takes the
         Lead!"
@@ -48,7 +54,7 @@ const Hero: React.FC = () => {
 
       <div className="text-center">
         <h2 className="font-normal font-afacad text-xl m-8 p-4">COUNTDOWN</h2>
-        <div className="flex space-x-4">
+        <div className="flex flex-wrap space-x-4">
           {["days", "hours", "minutes", "seconds"].map((unit) => (
             <div
               key={unit}

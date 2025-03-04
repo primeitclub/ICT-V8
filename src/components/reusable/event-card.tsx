@@ -20,14 +20,14 @@ export default function EventCard({
 }: EventCardProps): JSX.Element {
   return (
     <div className="p-6">
-      <div className="flex  gap-4 mb-12">
+      <div className="flex flex-wrap md:flex-nowrap gap-4 mb-12">
         <img
           src={image}
           alt={name}
           className=" h-full w-52 object-cover rounded-xl"
         />
         <div className="text-white w-full">
-          <h3 className="text-[32px] font-bold font-afacad leading-10">
+          <h3 className="text-[26px] font-semibold font-afacad leading-10">
             {name}
           </h3>
           <div className="text-white text-base font-normal font-afacad leading-relaxed flex items-center gap-2 ">
