@@ -47,7 +47,7 @@ export default function EventModal({
         aria-hidden="true"
       ></div>
 
-      <div className="flex min-h-full items-center justify-center p-4 text-center sm:p-0 relative z-10 ">
+      <div className="flex min-h-full items-center justify-center p-4 text-center md:p-0 relative z-10 ">
         <div className="relative w-full max-w-3xl max-h-[90vh] bg-[#111827] overflow-auto rounded-md  scrollbar-none">
           <button
             onClick={onClose}
