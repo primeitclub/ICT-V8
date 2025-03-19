@@ -11,6 +11,8 @@ interface TabItem {
   location: string;
   time: string;
   date: string;
+  description?: string;
+  highlights?: string[];
 }
 
 const eventsData: Record<string, TabItem[]> = {
@@ -22,6 +24,15 @@ const eventsData: Record<string, TabItem[]> = {
       location: "Seminar Hall, 3rd floor",
       time: "10:00 AM",
       date: "February 21, 2025",
+      description:
+        "Are you ready to dive into the world of decentralized technology? Join us for Blockchain Revolution 101's an exclusive event that explores the transforming potential of blockchain technology.",
+      highlights: [
+        "Keynote Sessions: Gain insights from global blockchain pioneers and visionaries.",
+        "Panel Discussions: Explore blockchain's impact on finance, supply chain, healthcare, and beyond.",
+        "Hands-On Workshops: Learn to develop smart contracts and decentralized applications (dApps).",
+        "Networking: Connect with like-minded professionals and forge lasting industry relationships.",
+        "Pitch Competitions: Watch startups pitch groundbreaking ideas to investors and industry leaders.",
+      ],
     },
     {
       image: workshop,
@@ -30,6 +41,15 @@ const eventsData: Record<string, TabItem[]> = {
       location: "Seminar Hall, 3rd floor",
       time: "10:00 AM",
       date: "February 21, 2025",
+      description:
+        "Are you ready to dive into the world of decentralized technology? Join us for Blockchain Revolution 101's an exclusive event that explores the transforming potential of blockchain technology.",
+      highlights: [
+        "Keynote Sessions: Gain insights from global blockchain pioneers and visionaries.",
+        "Panel Discussions: Explore blockchain's impact on finance, supply chain, healthcare, and beyond.",
+        "Hands-On Workshops: Learn to develop smart contracts and decentralized applications (dApps).",
+        "Networking: Connect with like-minded professionals and forge lasting industry relationships.",
+        "Pitch Competitions: Watch startups pitch groundbreaking ideas to investors and industry leaders.",
+      ],
     },
     {
       image: workshop,
@@ -38,6 +58,15 @@ const eventsData: Record<string, TabItem[]> = {
       location: "Seminar Hall, 3rd floor",
       time: "10:00 AM",
       date: "February 21, 2025",
+      description:
+        "Are you ready to dive into the world of decentralized technology? Join us for Blockchain Revolution 101's an exclusive event that explores the transforming potential of blockchain technology.",
+      highlights: [
+        "Keynote Sessions: Gain insights from global blockchain pioneers and visionaries.",
+        "Panel Discussions: Explore blockchain's impact on finance, supply chain, healthcare, and beyond.",
+        "Hands-On Workshops: Learn to develop smart contracts and decentralized applications (dApps).",
+        "Networking: Connect with like-minded professionals and forge lasting industry relationships.",
+        "Pitch Competitions: Watch startups pitch groundbreaking ideas to investors and industry leaders.",
+      ],
     },
   ],
   session: [
@@ -48,6 +77,15 @@ const eventsData: Record<string, TabItem[]> = {
       location: "Seminar Hall, 3rd floor",
       time: "10:00 AM",
       date: "February 21, 2025",
+      description:
+        "Are you ready to dive into the world of decentralized technology? Join us for Blockchain Revolution 101's an exclusive event that explores the transforming potential of blockchain technology.",
+      highlights: [
+        "Keynote Sessions: Gain insights from global blockchain pioneers and visionaries.",
+        "Panel Discussions: Explore blockchain's impact on finance, supply chain, healthcare, and beyond.",
+        "Hands-On Workshops: Learn to develop smart contracts and decentralized applications (dApps).",
+        "Networking: Connect with like-minded professionals and forge lasting industry relationships.",
+        "Pitch Competitions: Watch startups pitch groundbreaking ideas to investors and industry leaders.",
+      ],
     },
     {
       image: workshop,
@@ -56,6 +94,15 @@ const eventsData: Record<string, TabItem[]> = {
       location: "Seminar Hall, 3rd floor",
       time: "10:00 AM",
       date: "February 21, 2025",
+      description:
+        "Are you ready to dive into the world of decentralized technology? Join us for Blockchain Revolution 101's an exclusive event that explores the transforming potential of blockchain technology.",
+      highlights: [
+        "Keynote Sessions: Gain insights from global blockchain pioneers and visionaries.",
+        "Panel Discussions: Explore blockchain's impact on finance, supply chain, healthcare, and beyond.",
+        "Hands-On Workshops: Learn to develop smart contracts and decentralized applications (dApps).",
+        "Networking: Connect with like-minded professionals and forge lasting industry relationships.",
+        "Pitch Competitions: Watch startups pitch groundbreaking ideas to investors and industry leaders.",
+      ],
     },
   ],
   competition: [
@@ -66,6 +113,15 @@ const eventsData: Record<string, TabItem[]> = {
       location: "Seminar Hall, 3rd floor",
       time: "10:00 AM",
       date: "February 21, 2025",
+      description:
+        "Join our expert panel as they discuss the promises and perils of artificial intelligence. This thought-provoking session explores how AI is both solving complex problems and creating new ethical dilemmas.",
+      highlights: [
+        "AI Ethics: Examining the moral implications of autonomous systems.",
+        "Job Displacement: Understanding how automation affects employment landscapes.",
+        "Privacy Concerns: Balancing data collection with individual rights.",
+        "Regulatory Frameworks: Exploring governance approaches for AI technologies.",
+        "Future Scenarios: Predicting how AI might shape society in coming decades.",
+      ],
     },
     {
       image: workshop,
@@ -74,6 +130,15 @@ const eventsData: Record<string, TabItem[]> = {
       location: "Seminar Hall, 3rd floor",
       time: "10:00 AM",
       date: "February 21, 2025",
+      description:
+        "Join our expert panel as they discuss the promises and perils of artificial intelligence. This thought-provoking session explores how AI is both solving complex problems and creating new ethical dilemmas.",
+      highlights: [
+        "AI Ethics: Examining the moral implications of autonomous systems.",
+        "Job Displacement: Understanding how automation affects employment landscapes.",
+        "Privacy Concerns: Balancing data collection with individual rights.",
+        "Regulatory Frameworks: Exploring governance approaches for AI technologies.",
+        "Future Scenarios: Predicting how AI might shape society in coming decades.",
+      ],
     },
   ],
   panel: [
@@ -84,6 +149,15 @@ const eventsData: Record<string, TabItem[]> = {
       location: "Seminar Hall, 3rd floor",
       time: "10:00 AM",
       date: "February 21, 2025",
+      description:
+        "Join our expert panel as they discuss the promises and perils of artificial intelligence. This thought-provoking session explores how AI is both solving complex problems and creating new ethical dilemmas.",
+      highlights: [
+        "AI Ethics: Examining the moral implications of autonomous systems.",
+        "Job Displacement: Understanding how automation affects employment landscapes.",
+        "Privacy Concerns: Balancing data collection with individual rights.",
+        "Regulatory Frameworks: Exploring governance approaches for AI technologies.",
+        "Future Scenarios: Predicting how AI might shape society in coming decades.",
+      ],
     },
   ],
   esports: [
@@ -94,6 +168,15 @@ const eventsData: Record<string, TabItem[]> = {
       location: "Room B",
       time: "11:00 AM",
       date: "2024-12-21",
+      description:
+        "Join our expert panel as they discuss the promises and perils of artificial intelligence. This thought-provoking session explores how AI is both solving complex problems and creating new ethical dilemmas.",
+      highlights: [
+        "AI Ethics: Examining the moral implications of autonomous systems.",
+        "Job Displacement: Understanding how automation affects employment landscapes.",
+        "Privacy Concerns: Balancing data collection with individual rights.",
+        "Regulatory Frameworks: Exploring governance approaches for AI technologies.",
+        "Future Scenarios: Predicting how AI might shape society in coming decades.",
+      ],
     },
   ],
 };
@@ -151,6 +234,8 @@ export default function EventsPage(): JSX.Element {
                 location={event.location}
                 time={event.time}
                 date={event.date}
+                description={event.description}
+                highlights={event.highlights}
               />
             ))}
           </div>
