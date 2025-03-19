@@ -20,11 +20,11 @@ export default function EventCard({
 }: EventCardProps): JSX.Element {
   return (
     <div className="p-6">
-      <div className="flex flex-wrap md:flex-nowrap gap-4 mb-12">
+      <div className="flex flex-wrap sm:flex-nowrap gap-4 mb-12">
         <img
           src={image}
           alt={name}
-          className=" h-full w-52 object-cover rounded-xl"
+          className=" h-full w-full sm:w-52 object-cover rounded-xl"
         />
         <div className="text-white w-full">
           <h3 className="text-[26px] font-semibold font-afacad leading-10">
