@@ -86,7 +86,7 @@ const eventsData: Record<string, TabItem[]> = {
       date: "February 21, 2025",
     },
   ],
-  esport: [
+  esports: [
     {
       image: workshop,
       name: "Valorant",
@@ -120,7 +120,7 @@ export default function EventsPage(): JSX.Element {
           </div>
 
           <div className="flex flex-wrap justify-center mt-8 gap-8 ">
-            {["workshop", "session", "competition", "panel", "esport"].map(
+            {["workshop", "session", "competition", "panel", "esports"].map(
               (tab, index, array) => (
                 <div className="flex items-center gap-8" key={tab}>
                   <button
@@ -141,7 +141,7 @@ export default function EventsPage(): JSX.Element {
             )}
           </div>
 
-          <div className="mt-8 px-4 w-full md:w-[900px] pt-8 bg-white/5 backdrop-blur-lg rounded-2xl">
+          <div className="mt-8 px-4 w-full lg:w-[900px] pt-8 bg-white/5 backdrop-blur-lg rounded-2xl">
             {eventsData[activeTab].map((event, index) => (
               <EventCard
                 key={index}
