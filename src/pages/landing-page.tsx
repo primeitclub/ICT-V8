@@ -6,6 +6,7 @@ import Hero from "@/components/heroPage/hero";
 import Footer from "@/components/global/footer";
 import ScheduleTable from "@/components/molecules/schedules/schedule-table";
 import SponsorSection from "@/components/molecules/sections/sponsor-section";
+import EventSection from "@/components/molecules/sections/EventSection";
 
 export default function LandingPage(): JSX.Element {
   return (
@@ -15,6 +16,7 @@ export default function LandingPage(): JSX.Element {
       <PosterSection />
       <GlimpseSection />
       <ScheduleTable />
+      <EventSection />
       <FAQSection />
       <SponsorSection />
       <Footer />
