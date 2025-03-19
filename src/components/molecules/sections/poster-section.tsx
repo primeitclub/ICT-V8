@@ -3,18 +3,24 @@ import v7poster from "@/assets/v7poster.png";
 
 export default function PosterSection() {
   return (
-    <div className="relative  min-h-screen overflow-x-hidden  bg-gradient-to-r from-[#0086a7] to-[#001783]">
+    <div className="relative  min-h-screen overflow-x-hidden  bg-black">
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 blur-3xl md:rounded-2xl z-0"
         style={{
           background: `linear-gradient(
-            to bottom,
+            to top,
             rgba(0, 0, 0, 0) 0%,
-            black 50%
+            rgba(0, 23, 131, 0.5) 100%
           )`,
         }}
-      />
-
+      />{" "}
+      {/* <div className="flex absolute inset-0 z-0">
+        <div className="w-[540px] h-[540px] md:rounded-[70%] bg-[#0086a7]  opacity-40 blur-3xl z-10"></div>
+        <div className="w-1/2 mt-4 h-[600px] bg-[#17407D] opacity-50 blur-3xl z-10"></div>
+      </div> */}
+      <div className="blur-3xl">
+        <div className="absolute -z-1 top-[150px] w-[400px] h-[800px]  lg:w-[1200px] lg:h-[800px] bg-gradient-to-r from-[#0086A7] via-cyan-500 to-[#002783] rounded-full blur-3xl opacity-40"></div>
+      </div>
       <div className="container relative flex flex-col items-center justify-center min-h-screen mt-12">
         <div className="relative z-10">
           <img src={cute_robo} className="h-40 md:h-80" alt="Cute Robot" />

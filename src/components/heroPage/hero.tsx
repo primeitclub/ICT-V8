@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
 
       <div className="text-center">
         <h2 className="font-normal font-afacad text-xl m-8 p-4">COUNTDOWN</h2>
-        <div className="flex space-x-4">
+        <div className="flex flex-wrap space-x-4">
           {["days", "hours", "minutes", "seconds"].map((unit) => (
             <div
               key={unit}
