@@ -65,3 +65,13 @@
     @apply bg-black text-foreground;
   }
 }
+
+/* In your global CSS or Tailwind's custom styles file */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
