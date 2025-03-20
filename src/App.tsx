@@ -5,6 +5,7 @@ import LandingPage from "./pages/landing-page";
 import EventsPage from "./pages/events-page";
 import ScrollToTop from "./components/wrappers/scroll-to-top";
 
+
 export default function App() {
   return (
     <>

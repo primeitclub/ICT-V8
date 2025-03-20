@@ -36,6 +36,7 @@ export default function PosterSection() {
           This year's gathering encourages collaboration and breaking down
           barriers to tackle tech challenges.
         </div>
+        
       </div>
     </div>
   );
