@@ -6,12 +6,14 @@ import EventsPage from "./pages/events-page";
 import ScrollToTop from "./components/wrappers/scroll-to-top";
 import Hero from "./components/heroPage/hero";
 import PosterSection from "./components/molecules/sections/poster-section";
+import FAQSection from "./components/molecules/sections/faq-section";
 
 export default function App() {
   return (
     <>
     <Hero/>
     <PosterSection/>
+    <FAQSection/>
       {/* <ScrollToTop />
       <Routes>
         <Route path="/" element={<ComingSoon />} />

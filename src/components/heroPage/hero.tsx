@@ -33,8 +33,14 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-[#0e0e1b] flex flex-col items-center justify-center text-white px-4">
+    <div className="relative min-h-screen bg-gradient-to-b from-[#0e0e1b] to-[#020617] flex flex-col items-center justify-center text-white px-4">
+      {/* Background Glow */}
+      <div className="absolute w-[2241.74px] h-[1038.69px] left-[196.81px] top-[-813.73px] 
+        bg-gradient-to-br from-[rgba(39,84,122,0.6)] via-[rgba(39,84,122,0.6)] to-[rgba(15,118,166,0.6)] 
+        blur-[136.6px] rotate-[15.4deg]">
+      </div>
 
+      {/* Title */}
       <h1 className="font-bold text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-afacad mb-4 z-10 text-center">
         ICT MEETUP V8.0
       </h1>
@@ -42,6 +48,7 @@ const Hero: React.FC = () => {
         "Fueling Ideas, Shaping the Future – Where Open Innovation Takes the Lead!"
       </p>
 
+      {/* Register Button */}
       <button
         className="px-6 py-3 text-lg md:text-xl w-44 md:w-52 mt-2 text-white rounded-tl-none rounded-tr-2xl rounded-bl-2xl rounded-br-none border-2 shadow-lg font-afacad flex items-center justify-center"
         style={{ backgroundColor: "#7409BC", borderColor: "#5A97E7" }}
@@ -49,7 +56,7 @@ const Hero: React.FC = () => {
         Register Now
       </button>
 
-      {/* Countdown Section */}
+      {/* Countdown Timer */}
       <div className="text-center mt-8">
         <h2 className="font-normal font-afacad text-xl md:text-2xl mb-6">
           COUNTDOWN
@@ -67,6 +74,11 @@ const Hero: React.FC = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Bottom Glow Effect */}
+      <div className="absolute w-[1028px] h-[1028px] left-[-66px] top-[965px] 
+        bg-[rgba(0,134,167,0.6)] blur-[334.45px]">
       </div>
     </div>
   );
